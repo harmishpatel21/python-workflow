@@ -24,7 +24,8 @@ jobs:
       run: pip install -r requirements.txt || true
 
     - name: Run tests
-      run: python -m unittest discover
+      run: |
+        pytest
 
   deploy:
     runs-on: ubuntu-latest
