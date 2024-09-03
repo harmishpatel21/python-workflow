@@ -38,7 +38,6 @@ jobs:
 
     - name: Merge dev into main
       run: |
-        git config --global user.name "harmishpatel21"
         git config --global user.email "harmish2111patel@gmail.com"
         git checkout main
         git merge dev
